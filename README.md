@@ -7,7 +7,7 @@ index.html をブラウザで開くか、このフォルダで `python -m http.s
 
 ## 機能と制限
 - 東京、ロンドン、ニューヨーク、UTC、シンガポール、シドニーの世界時計。端末時計と Intl API を使用し、夏時間に対応。
-- 世界地図は試作HTML由来の装飾用模式図。昼夜境界は太陽赤緯とUTCによる概算で、航法・観測用途には不適。
+- 世界地図はNatural Earth 1:50mを簡略化したSVG（海岸線・国境）。拡大・縮小とドラッグ移動に対応。昼夜境界は太陽赤緯とUTCによる概算で、航法・観測用途には不適。
 - CPU論理数、RAM目安、画面情報はブラウザが公開する値のみ。使用率ではなく、非対応時は不明と表示。
 - 接続状態は navigator.onLine の推定値。インターネット到達性や速度の測定ではありません。
 - 公開IPはボタン操作時のみ https://api.ipify.org?format=json に問い合わせます。取得先には通信元IPが伝わります。6秒でタイムアウトし再試行できます。
@@ -25,7 +25,7 @@ index.html をブラウザで開くか、このフォルダで `python -m http.s
 公式手順: https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
 
 ## 素材とライセンス
-依頼者提供の cyber_world_dashboard.html をベースに整備。地図は元HTMLに含まれるSVG図形です。外部ライブラリ・画像・フォントの同梱はありません。再配布ライセンスは未設定です。
+依頼者提供の cyber_world_dashboard.html をベースに整備。地図はNatural EarthのPublic DomainデータをSVGに変換して同梱しています。出典: https://www.naturalearthdata.com/ / https://github.com/nvkelso/natural-earth-vector/blob/master/geojson/ne_50m_admin_0_countries.geojson 。境界表現は提供元に準拠し、法的な国境認定を意図しません。外部ライブラリ・画像・フォントの同梱はありません。再配布ライセンスは未設定です。
 
 ## 今後の拡張
 都市の選択、表示設定の端末内保存、地図の精度向上。外部APIは必要性とプライバシーを確認して追加します。
