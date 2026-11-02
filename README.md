@@ -21,7 +21,7 @@ index.html をブラウザで開くか、このフォルダで `python -m http.s
 
 ## GitHub Pages
 専用リポジトリに登録後、Settings → Pages → Deploy from a branch → main / (root) を選択します。
-公開URLは公開後に確認して記載します。
+公開URL: https://seikoubon.github.io/world-signal-local-console/
 公式手順: https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
 
 ## 素材とライセンス
@@ -29,3 +29,12 @@ index.html をブラウザで開くか、このフォルダで `python -m http.s
 
 ## 今後の拡張
 都市の選択、表示設定の端末内保存、地図の精度向上。外部APIは必要性とプライバシーを確認して追加します。
+
+## 検証記録（2026-11-02）
+- JavaScript構文チェック通過。
+- 昼夜判定: 夏至・冬至・赤緯0度を含む40,500地点で太陽方向との内積判定と一致。
+- 公開ページで6都市の時計更新・日付・タイムゾーンを確認。
+- BraveでPC画面とスマートフォン相当の画面幅（表示領域375px）を確認。横はみ出しなし。
+- 公開IPの任意取得が成功し、ボタンが再操作可能になることを確認。
+- 確認中のコンソール警告・エラーなし。
+- 実機スマートフォン、別ブラウザ、オフライン・取得失敗時の動作は未確認。
